@@ -14,6 +14,8 @@
 import { computed } from "vue";
 import { useStore } from "vuex";
 import {
+  // We could call the flwg mutations directly inside this component -since they are NOT async-.
+  // But we access them here via a crospondent -action-.
   // INCREMENT_MUT,
   // DECREMENT_MUT,
   // INCREMENT_BY_MUT,
